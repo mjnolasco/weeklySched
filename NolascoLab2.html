@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Schedule for Micah Nolasco - mjnolasco - Summer Session 1, 2024</title>
+    <style>
+      table{
+        border: 1px black solid;
+      }
+
+      th{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color:palevioletred;
+        font-weight: bold;
+        font-size:larger;
+        background-color:lightpink;
+        border-radius: 20;
+        padding: 15px 30px;
+      }
+      td{
+        text-align: center;
+        border: 10;
+        padding: 10px 20px;
+        font-size: 18px;
+      }
+      h1{
+        color:violet;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      caption{
+        color:deeppink;
+        font-weight: bolder;
+        font-size: 30px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      .rounded{
+        border-radius: 30%;
+      }
+      .bpink{
+        color:mediumvioletred;
+        background-color: mistyrose;
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 20px;;
+      }
+      .link{
+        color:black;
+        padding: 10px 20px;
+        display: block;
+        text-decoration: none;
+        cursor: -webkit-grab;
+        cursor:grab;
+      }
+      .link:hover{
+        background-color: mistyrose;
+        color: palevioletred;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How to define a table?</h1>
+    <dl>
+      <dt><b>&lt;tr&gt;</b></dt>
+        <dd>Used to define a row in a table</dd>
+      <br>
+      <dt><b>&lt;th&gt;</b></dt>
+        <dd>Used to define a header cell; typically bolded and centered</dd>
+      <br>
+      <dt><b>&lt;td&gt;</b></dt>
+        <dd>Used to define a standard data cell within a row</dd>
+      <br>
+      <dt><b>&lt;thead&gt;</b></dt>
+        <dd>Used for group header content in a table </dd>
+      <br>
+      <dt><b>&lt;tfoot&gt;</b></dt>
+        <dd>Used for groups footer content in a table</dd>
+      <br>
+      <dt><b>&lt;caption&gt;</b></dt>
+        <dd>Used to add a title or caption to a table</dd>
+      <br>
+      <dt><b>Difference Between colspan and rowspan</b></dt>
+        <dd>Colspan is used to span a cell across multiple columnns while rowspan is used to span a cell over multiple rows </dd>
+      <br>
+      <dt><b>Difference between cells spacing and padding</b></dt>
+        <dd>Cells spacing is the attribute used to control space between individual cells while cells padding is the attribute that controls the space between a cell's content and the cell's border.</dd>
+      <br>
+      <dt><b>How to define table borders using CSS</b></dt>
+        <dd>Can use the border property on the &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements. CSS will apply the characteristics listed, such as whether the border is a solid line, the color, and width to the table, table header cells, and table data cells.</dd>
+      <br>
+      <dt><b>How to control broder widths with CSS</b></dt>
+        <dd>Specify any desired width in border property; will apply to listed elements such as &lt;table&gt;, &lt;th&gt;, and &lt;td&gt;, can be seen in the table, table headers, and table data cells</dd>
+    </dl>
+    <br>
+    <table border="1">
+     <caption>
+       Micah's Summer Schedule
+      <tr>
+        <th class="bpink">Time</th>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+      <tr>
+        <td class="bpink">9:00am</td>
+        <td></td>
+        <td colspan="5">Wake up and eat breakfast
+          <br>
+          <img src="Images/WeekdayBfast.jpeg" alt="Bowl of granola with fruit" height="200px" class="rounded">
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="bpink">10:00am</td>
+        <td>Wake up and eat breakfast
+          <br>
+        <img src="Images/SunBfast.jpg" alt="Avocado Toast with Egg" height="125px" class="rounded">
+      </td>
+        <td>Get ready for the day</td>
+        <td>Go to the gym
+          <br>
+          <img src="Images/Gym.jpg" alt="Weight Room" height="125px" class="rounded">
+        </td>
+        <td>Get ready for the day</td>
+        <td>Go to the gym
+          <br>
+          <img src="Images/Gym.jpg" alt="Weight Room" height="125px" class="rounded">
+        </td>
+        <td>Go to the gym
+          <br>
+          <img src="Images/Gym.jpg" alt="Weight Room" height="125px" class="rounded">
+        </td>
+        <td>Wake up and eat breakfast
+          <br>
+        <img src="Images/SatBfast.jpg" alt="French Toast with Berries" height="125px" class="rounded">
+      </td>
+      </tr>
+      <tr>
+        <td class="bpink">11:00am</td>
+        <td>Get ready for the day</td>
+        <td rowspan="2">COGS3 Lecture
+          <br>
+          <img src="Images/COGS3.jpg" alt="UCSD COGS3 Course Image" height="125px" class="rounded">
+        </td>
+        <td></td>
+        <td rowspan="2">COGS3 Lecture
+          <br>
+          <img src="Images/COGS3.jpg" alt="UCSD COGS3 Course Image" height="125px" class="rounded">
+        </td>
+        <td></td>
+        <td></td>
+        <td>Get ready for the day</td>
+      </tr>
+      <tr>
+        <td class="bpink">12:00pm</td>
+        <td rowspan="3">Go to the beach with friends
+          <img src="Images/Beach.jpg" alt="Scripps Beach" height="125px" class="rounded">
+        </td>
+        <td>Run 3 miles
+          <br>
+          <img src="Images/Running.jpg" alt="Girl running" height="125px" class="rounded">
+        </td>
+        <td>Run 3 miles
+          <br>
+          <img src="Images/Running.jpg" alt="Girl running" height="125px" class="rounded">
+        </td>
+        <td>Run 3 miles
+          <br>
+          <img src="Images/Running.jpg" alt="Girl running" height="125px" class="rounded">
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="bpink">1:00pm</td>
+        <td rowspan="3">COGS3 Lab
+          <br>
+          <img src="Images/Lab.jpg" alt="Vis Studio Code Logo" height="125px" class="rounded">
+        </td>
+        <td>Get ready for the rest of the day</td>
+        <td rowspan="3">COGS3 Lab
+          <br>
+          <img src="Images/Lab.jpg" alt="Vis Studio Code Logo" height="125px" class="rounded">
+        </td>
+        <td>Get ready for the rest of the day</td>
+        <td>Get ready for the rest of the day</td>
+        <td rowspan="3">
+          <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="link">Review supplemental lecture material</a>
+          <br>
+          <img src="Images/Review.jpg" alt="Desk with study materials" height="125px" class="rounded">
+        </td>
+      </tr>
+      <tr>
+        <td class="bpink">2:00pm</td>
+        <td rowspan="3">Start first lab of the week
+          <br>
+          <img src="Images/Homework.jpg.webp" alt="Girl doing homework" height="125px" class="rounded">
+        </td>
+        <td rowspan="3">Start second lab of the week
+          <br>
+          <img src="Images/Homework.jpg.webp" alt="Girl doing homework" height="125px" class="rounded">
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="bpink">3:00pm</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="bpink">4:00pm</td>
+        <td>Eat lunch
+          <br>
+          <img src="Images/Lunch.jpg" alt="Sandwich" height="125px" class="rounded">
+        </td>
+        <td rowspan="7">Go to work
+          <br>
+          <img src="Images/Work.jpg" alt="Server working" height="125px" class="rounded">
+        </td>
+        <td rowspan="7">Go to work
+          <br>
+          <img src="Images/Work.jpg" alt="Server working" height="125px" class="rounded">
+        </td>
+        <td rowspan="7">Go to work
+          <br>
+          <img src="Images/Work.jpg" alt="Server working" height="125px" class="rounded">
+        </td>
+        <td rowspan="7">Go to work
+          <br>
+          <img src="Images/Work.jpg" alt="Server working" height="125px" class="rounded">
+        </td>
+      </tr>
+      <tr>
+        <td class="bpink">5:00pm</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="bpink">6:00pm</td>
+        <td></td>
+        <td rowspan="4">Spend time with boyfriend
+          <br>
+          <img src="Images/WatchingTV.jpg.webp" alt="Couple watching TV" height="125px" class="rounded">
+        </td>
+        <td rowspan="4">Spend time with boyfriend
+          <br>
+          <img src="Images/Dinner.jpg" alt="Couple enjoying dinner" height="125px" class="rounded">
+        </td>
+      </tr>
+      <tr>
+        <td class="bpink">7:00pm</td>
+        <td rowspan="3">Lab quizzes</td>
+      </tr>
+      <tr>
+        <td class="bpink">8:00pm</td>
+      </tr>
+      <tr>
+        <td class="bpink">9:00pm</td>
+      </tr>
+      <tr>
+        <td class="bpink">10:00pm</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="bpink">11:00pm</td>
+        <td colspan=7>Get ready for bed and go to sleep
+          <br>
+          <img src="Images/Bedtime.jpg.avif" alt="Laying in Bed at Night" height="200px" class="rounded">
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
